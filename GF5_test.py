@@ -81,10 +81,12 @@ def genPDS2(q):
         print('%s/%s' % (cf, terms))
         print('   %s' %(str(field2pds(g, q))))
 
+print('genPDS()')
 for q in [2, 3, 4, 5, 17, 25]: #7, 17, 49, 81, 125]:
     genPDS(q)
 print('')
 
+print('genPDS2() list all GF of a given order and the derived PDS')
 for q in [2, 3, 4, 5, 7]:
     genPDS2(q)
     print('')
